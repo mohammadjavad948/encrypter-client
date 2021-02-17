@@ -58,7 +58,7 @@ export default function Home() {
         axios.post(ENDPOINT + '/save', {value: encrypt.toString()}).then((r) => {
             const id = r.data._id;
 
-            setLink(`http://localhost:3000/${id}`)
+            setLink(`https://encrypter-client.vercel.app/${id}`)
         })
     }
 
